@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useSearchParams, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { fetchSearch } from 'api/apiFetch';
 import Notiflix from 'notiflix';
 
