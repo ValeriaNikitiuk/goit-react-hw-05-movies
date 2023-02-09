@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { fetchSearch } from 'api/apiFetch';
+
+import { Link } from 'react-router-dom';
 import Notiflix from 'notiflix';
 
 export const Movies = () => {
@@ -60,10 +62,14 @@ export const Movies = () => {
                 'https://flora.dobro-est.com/tradeskantsiya-tradescantia-opisanie-vidyi-i-uhod-za-tradeskantsiey.html';
             }
             return (
-              <li key={movie.id} to={`${movie.id}`} state={{ from: location }}>
+              <Link
+                key={movie.id}
+                to={`${movie.id}`}
+                state={{ from: location }}
+              >
                 <img src={posterPath} width="400" alt={movie.title} />
                 <h2>{movie.title}</h2>
-              </li>
+              </Link>
             );
           })}
         </ul>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import { fetchTrending } from '../../../../api/apiFetch';
+import { fetchTrending } from 'api/apiFetch';
 import Notiflix from 'notiflix';
+import { Link } from 'react-router-dom';
 
 export const Home = () => {
   const [trendings, setTrendings] = useState([]);
@@ -33,10 +34,10 @@ export const Home = () => {
               'https://flora.dobro-est.com/tradeskantsiya-tradescantia-opisanie-vidyi-i-uhod-za-tradeskantsiey.html';
           }
           return (
-            <li key={movie.id} to={`/movies/${movie.id}`}>
+            <Link key={movie.id} to={`/movies/${movie.id}`}>
               <img src={posterPath} width="420" alt={movie.title} />
               <h2>{movie.title}</h2>
-            </li>
+            </Link>
           );
         })}
       </ul>
