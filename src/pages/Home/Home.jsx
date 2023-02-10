@@ -3,7 +3,7 @@ import { fetchTrending } from 'api/apiFetch';
 import Notiflix from 'notiflix';
 import { Link } from 'react-router-dom';
 
-export const Home = () => {
+const Home = () => {
   const [trendings, setTrendings] = useState([]);
 
   useEffect(() => {
@@ -45,4 +45,4 @@ export const Home = () => {
   );
 };
 
-// export default Home;
+export default Home;

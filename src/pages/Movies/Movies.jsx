@@ -5,7 +5,7 @@ import { fetchSearch } from 'api/apiFetch';
 import { Link } from 'react-router-dom';
 import Notiflix from 'notiflix';
 
-export const Movies = () => {
+const Movies = () => {
   const location = useLocation();
   const [movies, setMovies] = useState([]);
   const [input, setInput] = useState('');
@@ -77,4 +77,4 @@ export const Movies = () => {
     </>
   );
 };
-// export default Movies;
+export default Movies;
