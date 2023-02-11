@@ -57,7 +57,7 @@ const Movies = () => {
         </button>
       </form>
       {movies && (
-        <ul>
+        <ul className={s.movie_cards}>
           {movies.map(movie => {
             let posterPath;
             if (movie.poster_path) {
@@ -68,12 +68,13 @@ const Movies = () => {
             }
             return (
               <Link
+                className={s.movieItems}
                 key={movie.id}
                 to={`${movie.id}`}
                 state={{ from: location }}
               >
                 <img src={posterPath} width="400" alt={movie.title} />
-                <h2>{movie.title}</h2>
+                <h2 className={s.movie_title}>{movie.title}</h2>
               </Link>
             );
           })}

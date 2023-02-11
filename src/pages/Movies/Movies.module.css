@@ -24,3 +24,35 @@ background-color: rgb(122, 3, 232);
     text-decoration: none;
 }
 
+.movie_cards {
+    display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 40px;
+        transition: scale 250ms linear 0s, box-shadow 250ms linear 0s;
+}
+
+.movieItems{
+    width: 400px;
+        background-color: rgba(128, 39, 211, 0.094);
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        flex-direction: column;
+        text-decoration: none;
+        margin-right: 20px;
+        margin-bottom: 46px;
+        transition: 0.5s;
+        display: block
+}
+
+.movieItems:hover{
+    transform: scale(1.1);
+        box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgb(29, 27, 27);
+}
+
+.movie_title{
+    text-align: center;
+        color: black;
+        font-size: 25px
+}
