@@ -1,0 +1,17 @@
+.posters_img{
+    width:400px;
+}
+
+.movie_cards{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    color: white;
+    padding: 40px;
+}
+
+.movie_container{
+    margin-left: 48px;
+}
+.movie_title{
+    color:blueviolet
+}

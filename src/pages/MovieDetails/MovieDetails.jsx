@@ -3,6 +3,7 @@ import { Outlet, useParams, useLocation } from 'react-router-dom';
 import { useState, useEffect, Suspense } from 'react';
 import { DetailsCard } from '../../components/DetailsCard/DetailsCard';
 import { NavLink, Link } from 'react-router-dom';
+import s from './MovieDetails.module.css';
 
 const MovieDetails = () => {
   const location = useLocation();
@@ -27,18 +28,25 @@ const MovieDetails = () => {
   return (
     <>
       <div>
-        <div>
-          <Link to={backLink}> Return to all movies </Link>
+        <div className={s.back_btn_container}>
+          <Link className={s.back_btn} to={backLink}>
+            {' '}
+            Return to all movies{' '}
+          </Link>
         </div>
         {error && <div>Something wrong</div>}
         {movie && (
           <div>
             <DetailsCard movie={movie} />
-            <h3> Additiona information</h3>
-            <NavLink to={'cast'} state={location.state}>
+            <h3 className={s.information}> Additional information</h3>
+            <NavLink className={s.cast_link} to={'cast'} state={location.state}>
               Cast
             </NavLink>
-            <NavLink to={'reviews'} state={location.state}>
+            <NavLink
+              className={s.cast_link}
+              to={'reviews'}
+              state={location.state}
+            >
               Reviews
             </NavLink>
           </div>
