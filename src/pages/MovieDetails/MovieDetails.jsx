@@ -38,7 +38,7 @@ const MovieDetails = () => {
             <NavLink to={'cast'} state={location.state}>
               Cast
             </NavLink>
-            <NavLink to={'cast'} state={location.state}>
+            <NavLink to={'reviews'} state={location.state}>
               Reviews
             </NavLink>
           </div>

@@ -27,7 +27,7 @@ export const DetailsCard = ({ movie }) => {
 };
 DetailsCard.propTypes = {
   movie: PropTypes.shape({
-    oster_path: PropTypes.string,
+    poster_path: PropTypes.string.isRequired,
     name: PropTypes.string,
     title: PropTypes.string,
     release_date: PropTypes.string,
