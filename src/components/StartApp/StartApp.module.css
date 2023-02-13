@@ -27,3 +27,7 @@ border: 5px solid white;
 
 }
 
+.btn_style_activ {
+    background-color: rgba(52, 6, 96, 0.703);
+        transition: All 0.5s ease;
+}

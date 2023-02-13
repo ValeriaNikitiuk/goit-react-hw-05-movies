@@ -3,6 +3,7 @@ import { lazy } from 'react';
 import { SharedLayout } from './SharedLayout/SharedLayout';
 import MovieDetails from '../pages/MovieDetails/MovieDetails';
 import Cast from './Cast/Cast';
+import Reviews from './Reviews/Reviews';
 
 export const App = () => {
   const Home = lazy(() => import('../pages/Home/Home.jsx'));
@@ -20,6 +21,7 @@ export const App = () => {
 
           <Route path="/movies/:movieId" element={<MovieDetails />}>
             <Route path="cast" element={<Cast />} />
+            <Route path="reviews" element={<Reviews />} />
           </Route>
           <Route path="*" element={<Home />} />
         </Route>

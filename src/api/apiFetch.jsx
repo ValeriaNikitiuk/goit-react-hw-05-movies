@@ -31,7 +31,7 @@ export const fetchMovieActors = async id => {
   return data;
 };
 
-export const fetchMovieRewviews = async id => {
+export const fetchMovieReviews = async id => {
   const { data } = await axios.get(
     `/movie/${id}/reviews?api_key=${API_KEY}&language=en-US`
   );

@@ -1,5 +1,4 @@
 import { fetchMovieActors } from '../../api/apiFetch';
-import { Notify } from 'notiflix';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
