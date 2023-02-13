@@ -17,4 +17,3 @@ export const StartApp = () => {
     </nav>
   );
 };
-//  default StartApp;
